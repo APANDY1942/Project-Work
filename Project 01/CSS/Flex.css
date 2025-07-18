@@ -1,0 +1,194 @@
+*,*:before,*:after{                  /*全部指定並鎖定大小，不位移*/
+    box-sizing: border-box;
+}
+
+.container{
+  display: flex;                     /*橫式排列，沒有就是直式排列，並且縮減是直式縮減*/
+  background: #004466;
+  width: 350px;
+  margin: 0 auto;                    /*網頁水平置中*/
+  padding: 10px;                     /*向內整體推10px*/
+}
+.item{
+  width: 100px;
+  background: #00ffa2;
+  color: #004466;
+  font-size: 36px;
+  text-align: center;
+  margin: 10px;                      /*向外整體推10px*/
+}
+.item2{
+  height: 30px;
+}
+
+/*----------*/
+
+.container{
+  display: flex;                     justify-content: space-around;
+  width: 500px;
+  background: #004466;
+  margin: 0 auto;                    /*網頁水平置中*/
+}
+.item0{
+  background: #00ffa2;
+  color: #004466;
+  text-align: center;                /*文字置中*/
+  font-size: 36px;
+  margin-bottom: 10px;               /*向下(外)推10px*/
+  margin-right: 10px;                /*向右(外)推10px*/
+  margin-left: 10px;                 /*向左(外)推10px*/
+}
+.item01{
+  width: 150px;
+}
+
+.item03{
+  width: 400px;
+}
+
+
+/*----------*/
+
+.containerAxis{                      /*框架主體*/
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+  background: #004466;
+  padding: 20px;
+  display: flex;                     /*橫式排列，沒有就是直式排列，並且縮減是直式縮減*/
+
+  flex-direction: row-reverse;       /*軸線決定由右至左的順序，沒打就是反過來*/
+                                     /*flex-direction:column-reverse 在主框架內跑到左下方由下而上排序*/
+                                     /*flex-direction:column; 在主框架內跑到左上方由上而下排序*/
+}
+.itemA{
+  width: 100px;
+  background: #00ffa2;
+  margin-left: 10px;                 /*向左(外)推10px*/
+  margin-right: 10px;                /*向右(外)推10px*/
+  color: #004466;
+  font-size: 36px;
+  text-align: center;
+}
+
+.itemB{
+  width: 100px;
+  background: #00ffa2;
+  margin-left: 10px;                /*向左(外)推10px*/
+  margin-right: 10px;               /*向右(外)推10px*/ 
+  color: #004466;
+  font-size: 36px;
+  text-align: center;
+}
+
+.itemC{
+  width: 100px;
+  background: #00ffa2;
+  margin-left: 10px;                /*向左(外)推10px*/
+  margin-right: 10px;               /*向右(外)推10px*/
+  color: #004466;
+  font-size: 36px;
+  text-align: center;
+}
+
+/*---------------*/
+
+.containerAxis02{
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+  background: #004466; 
+  display: flex;                     /*橫式排列，沒有就是直式排列，並且縮減是直式縮減*/
+  flex-direction: column;            /*在主框架內跑到左上方由上而下排序*/
+  justify-content: space-around;     /*框架內中間大兩邊小的對齊方式，由左至右排列*/
+  /*
+  justify-content: flex-start        框架內全部靠左對齊，由左至右排列
+  justify-content: center            框架內置中對齊，由左至右排列
+  justify-content: flex-end          框架內靠右對齊，由左至右排列
+  justify-content: space-between     框架內貼滿對齊，由左至右排列
+  justify-content: soace-evenly      框架內平均對齊，由左至右排列
+  */
+}
+
+.itemA01{
+  width: 100px;
+  background: #00ffa2;
+
+  color: #004466;
+  font-size: 36px;
+  text-align: center;
+}
+
+.itemB02{
+  width: 100px;
+  background: #00ffa2;
+
+  color: #004466;
+  font-size: 36px;
+  text-align: center;
+}
+
+.itemC03{
+  width: 100px;
+  background: #00ffa2;
+
+  color: #004466;
+  font-size: 36px;
+  text-align: center;
+}
+
+/*---------*/
+
+.menu{
+  width: 600px;
+  margin: 0 auto;
+  display: flex;                   /*橫式排列，沒有就是直式排列，並且縮減是直式縮減*/
+}
+.menu li{
+  width: 100px;
+  text-align: center;
+  border: 1px solid #000;
+
+}
+.menu li a{
+  display: block;                  /*變成表格按鈕方塊元素*/
+  background: #00aeff;
+  padding-top: 10px;               /*往上(內)縮10px*/
+  padding-bottom: 10px;            /*往下(內)縮10px*/
+  text-decoration: none;           /*增加底線，但None是沒變化*/
+  color: #ffffff;
+  
+}
+.menu li a:hover{
+  background: #79418f;
+  color: #ffffff
+}
+
+/*-------------*/
+
+.menu-Wrap{
+  width: 600px;
+  margin: 0 auto;                  /*網頁置中*/
+  display: flex;                   /*橫式排列，沒有就是直式排列，並且縮減是直式縮減*/
+  flex-wrap: wrap;                 /*換行語法*/
+  
+}
+.menu-Wrap li{
+  width: 100px;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+.menu-Wrap li a{
+  display: block;                  /*變成表格按鈕方塊元素*/
+  background: #00ffa2;  
+  padding-top: 10px;               /*往上(內)縮10px*/
+  padding-bottom: 10px;            /*往下(內)縮10px*/
+  text-decoration: none;           /*增加底線，但None是沒變化*/
+  color: #004466;
+  
+}
+.menu-Wrap li a:hover{
+  background: #004466;
+  color: #00ffa2
+}

@@ -1,0 +1,64 @@
+*,*:before,*:after{                  /*全部指定並鎖定大小，不位移*/
+    box-sizing: border-box;
+}
+
+.DIVmargin{
+    width: 856px;                   /*DIV框架設定*/
+    height: 944px;                
+    margin: auto;                   /*DIV框架置中*/
+    box-sizing:content-box;         /*DIV盒子自動計算*/
+    font-family:  'Noto Sans TC', 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+}
+
+.header{
+    padding-top:40px;                /*padding向內上推和下推留白20px*/
+    padding-bottom:40px;   
+}
+
+h1{
+    font-size: 20PX;
+    font-weight: bold;
+    color: black;
+}
+
+h2{
+    font-size: 15PX;
+    font-weight: bold;
+    color:rgb(87, 162, 33);
+}
+
+.shoe{
+    width: 856px;
+    height: 571px;   
+    margin: auto;
+    box-sizing:content-box;         /*DIV盒子自動計算*/
+}
+
+.content{
+    width: 856px;
+    height: 197px;
+    margin: auto;                   /*DIV框架置中*/
+    font-family:  'Noto Sans TC', 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+                                    /*google的網路字體自動抓取*/
+}
+
+ul{
+    text-align: left;               /*文字靠左*/
+}
+
+.content02{
+    width: 856px;
+    height: 197px;
+    margin: auto;
+    text-align: left;               /*文字靠左*/
+    font-family:  'Noto Sans TC', 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+}
+
+.footer{
+    width: 856px;
+    height: 213.58px;
+    margin: auto;
+    text-align: left;
+    color:rgb(87, 162, 3);
+    font-family:  'Noto Sans TC', 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+}

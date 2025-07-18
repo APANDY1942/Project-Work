@@ -1,0 +1,41 @@
+.Style_DIV01{
+    color: red;
+}
+
+.style_DIV02{
+    color: blue;
+}
+
+.style01 a{
+    color: red;
+    font-size: 40px;
+}
+
+.style02 h2{
+    font-size: 30px;
+}
+
+.style01  .content{
+    font-weight: bold;
+}
+
+.style02 a{
+    color: pink;
+}
+
+.box{
+    margin-left: 30px;          /*margin向外推留白30px*/
+    padding: 30px;              /*padding向內推留白 30px*/
+    border: 5px solid black;  /*CSS的框線樣式：border 和 solid增加框限*/
+    width: 300px;               /*佔寬度面積設定300px,高度有內容的時候不建議設定數值*/
+    
+}
+
+.box p{                    /*    margin- TOP bottom left right 留白區域會不同  */
+    margin-bottom: 30px;
+}
+
+
+
+
+

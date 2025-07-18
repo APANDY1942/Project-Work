@@ -1,0 +1,12 @@
+*,*:before,*:after{                  /*全部指定並鎖定大小，不位移*/
+    box-sizing: border-box;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    background: black;
+    position: fixed;            /*讓顏色區塊隨著卷軸固定在某個地方而不影響內容物*/
+    right: 0;                   /*指定在右下角*/
+    bottom: 0;
+}

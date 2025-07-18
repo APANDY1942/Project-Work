@@ -1,0 +1,42 @@
+*,*:before,*:after{                  /*全部指定並鎖定大小，不位移*/
+    box-sizing: border-box;
+}
+
+.header{
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;        /*一個框架實線*/
+    position: relative;             /*指定範圍區域，包在Div裡面的DIV盒子就只能在框架內定位*/
+}
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 119, 255);
+    position: absolute;              /*絕對定位，定位在左下方的話*/
+    left: 0;                         /*同上*/
+    bottom: -10px;                   /*同上，假如設定負數則是會移動到框架外面*/
+    z-index: 10;                      /*堆疊顯示的先後順序，0以下的負數也可以寫*/
+}
+
+.box02{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;               /*絕對定位，定位在右上方的話*/
+    right: 0;                         /*同上*/
+    top: 0;                           /*同上*/
+    z-index: 10;                      /*堆疊顯示的先後順序，0以下的負數也可以寫*/
+}
+
+.box03{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 102, 0);
+    position: absolute;               /*絕對定位，定位在右上方的話*/
+    left: -40px;                      /*同上*/
+    bottom: -10px;                    /*同上*/
+    z-index: 10;                      /*堆疊顯示的先後順序，0以下的負數也可以寫*/
+    
+}

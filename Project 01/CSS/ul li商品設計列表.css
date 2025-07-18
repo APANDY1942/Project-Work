@@ -1,0 +1,61 @@
+*,*:before,*:after{                  /*全部指定並鎖定大小，不位移*/
+    box-sizing: border-box;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    background: black;
+    position: fixed;            /*讓顏色區塊隨著卷軸固定在某個地方而不影響內容物*/
+    right: 0;                   /*指定在右下角*/
+    bottom: 0;
+}
+
+.ALLpro{
+    width: 600px;
+}
+
+.ALLpro .sale{
+    position: absolute;  /*絕對定位*/
+    top: 0;              /*因限時優惠，所以定位在左上角*/
+    left:0;              /*同上*/
+    background-color: red;
+    color: white;
+    padding: 8px;        /*padding向外推留白8px，增加限時優惠的眶大小*/
+    /*第一種寫法↑*/
+
+    /* 第二種寫法
+    padding-right: 5px;  增加限時優惠的眶大小
+    padding-bottom: 5px; 同上
+    */
+}
+
+.ALLpro img{
+    width: 100%;
+}
+
+.ALLpro li{              
+    position:relative;   /*相對定位，讓表格內的"限時優惠"固定不超出表格格線*/
+
+                         /*指定區塊在文字排列左上角*， float: none則是在文字上方不合併排列*/
+    float: left;         /*float: inline-start和End則是在開始和末端*/
+    width: 128px;
+    height: 200px;
+    border: 1px solid black;
+    margin-left: 5px;    /*margin向(外)左邊推增加5px的距離*/
+    margin-right: 5px;   /*margin向(外)右邊推增加5px的距離*/   
+    margin-bottom: 10px; /*margin向(外)下推增加10px的距離*/
+    padding-right: 5px;  /*padding向內左推和右推留白5px*/
+    padding-left: 5px;
+}
+
+.ALLpro li h2{
+    font-weight: bold;   /*粗體*/
+    color: blue;
+    margin-bottom: 20px;
+}  
+
+.ALLpro li span{
+    color: red;
+    font-size: 20px;
+}
