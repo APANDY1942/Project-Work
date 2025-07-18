@@ -1,0 +1,57 @@
+.product-row {
+    display: flex;                           /*橫式排列，沒有就是直式排列，並且縮減是直式縮減*/
+    flex-wrap: wrap;                         /*換行語法*/
+    margin-left: -4px;                       /*向左(外)推-4px*/       
+    margin-right: -4px;                      /*向右(外)推-4px*/    
+}
+
+.product-col {
+    width:calc(100%/ 12 *6);                /*計算表格*/
+    padding-right: 4px;                      /*向右(內)推4px*/
+    padding-left: 4px;                       /*向左(內)推4px*/
+}
+
+.del-price {
+    font-size: 14px;                         
+    font-weight: 400;                        /*粗體400，數值越大越粗*/
+    color:var(--neutral-500);                /*自訂變數，(neutral-500)例如從 100 到 900，數字越大通常越深或越飽和*/
+    padding-left: 8px;                       /*向左(內)推8px*/
+}
+
+.product-color {
+    width: 64px;
+    text-align: center;                      /*文字置中*/
+    color: var(--neutral-600);               /*自訂變數，(neutral-600)例如從 100 到 900，數字越大通常越深或越飽和*/
+}
+
+.btn-product-size {
+    border: 1px solid var(--neutral-300);    /*框架的線條+實線+自訂框架變數顏色，(neutral-300)例如從 100 到 900，數字越大通常越深或越飽和*/
+    width: 160px;
+}
+
+.btn-product-size.active,
+.btn-product-size:hover {                    /*滑鼠停在hover上方時啟用CSS規則*/
+    border-color: var(--neutral-900);        /*自訂變數框架顏色，(neutral-900)例如從 100 到 900，數字越大通常越深或越飽和*/
+}
+
+.product-service {
+    display: flex;                           /*橫式排列，沒有就是直式排列，並且縮減是直式縮減*/
+    gap: 8px;                                /*設定行與行之間的間距和設定列與列之間的間距，8px:這設定了行和列的間距都為 8 像素*/
+}
+
+.product-service .btn {
+    width: 50%;
+}
+
+.product-into-title {
+    font-weight: 500;                         /*粗體500，數值越大越粗*/
+}
+
+.product-info-item p{
+    color: var(--neutral-600);                /*自訂變數，(neutral-600)例如從 100 到 900，數字越大通常越深或越飽和*/
+}
+
+.product-info-item {
+    border-bottom: 1px solid var(--neutral-300);     
+                                             /*框架的線條+實線+自訂框架變數顏色，(neutral-300)例如從 100 到 900，數字越大通常越深或越飽和*/
+}
